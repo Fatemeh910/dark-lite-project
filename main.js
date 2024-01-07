@@ -4,8 +4,9 @@ themeButton.addEventListener('click', ()=>{
     document.body.classList.toggle('dark-theme');
     themeButton.classList.toggle('dark-button');
 
-    saveThemeToLocaLStorage
+    saveThemeToLocaLStorage();
 });
+// مااخرین وضعیت تم راتوی لوکال  استوریج ذخیره کردیم
 const saveThemeToLocaLStorage = () =>{
     if(Document.body.classList.contains('dark-theme')){
         localStorage.setItem('theme','dark');
