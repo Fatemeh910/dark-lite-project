@@ -7,6 +7,6 @@ themeButton.addEventListener('click', ()=>{
     if(Document.body.classList.contains('dark-theme')){
         localStorage.setItem('theme','dark');
     }else{
-        localStorage.setItem('theme','dark');
+        localStorage.setItem('theme','light');
     }
 });
