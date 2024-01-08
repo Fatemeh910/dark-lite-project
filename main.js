@@ -1,12 +1,6 @@
 const themeButton = document.querySelector(".theme-button");
     window.addEventListener('DOMContentLoaded',() => {
-        if(localStorage.getItem('theme') === "dark"){
-          document.body.classList.add("dark-theme");
-          themeButton.classList.add("dark-button");
-        }else{
-            document.body.classList.remove("dark-theme");
-            themeButton.classList.remove("dark-button");
-        }
+       
     });
 
 
@@ -25,4 +19,14 @@ const saveThemeToLocaLStorage = () =>{
     }else{
         localStorage.setItem('theme','light');
     }
+};
+
+const updateTheme = () => {
+    if(localStorage.getItem('theme') === "dark"){
+        document.body.classList.add("dark-theme");
+        themeButton.classList.add("dark-button");
+      }else{
+          document.body.classList.remove("dark-theme");
+          themeButton.classList.remove("dark-button");
+      }
 };
